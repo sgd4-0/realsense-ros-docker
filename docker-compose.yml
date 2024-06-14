@@ -3,6 +3,7 @@ services:
     extends:
       file: docker/docker-compose-nvidia.yml
       service: realsense_ros2
+    container_name: sgd_realsense
     networks:
       - ros_bridge
 networks:
