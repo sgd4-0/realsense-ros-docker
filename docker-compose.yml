@@ -1,0 +1,10 @@
+services:
+  realsense_ros2:
+    extends:
+      file: docker/docker-compose-nvidia.yml
+      service: realsense_ros2
+    networks:
+      - ros_bridge
+networks:
+  ros_bridge:
+    external: true
