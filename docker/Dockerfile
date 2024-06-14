@@ -27,3 +27,6 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 ARG DEBIAN_FRONTEND=dialog
+
+# Set entrypoint
+ENTRYPOINT  /entrypoint.sh
