@@ -6,6 +6,7 @@ services:
     container_name: sgd_realsense
     networks:
       - ros_bridge
+    command: ros2 launch realsense2_camera rs_launch.py enable_rgbd:=true enable_sync:=true align_depth.enable:=true enable_color:=true enable_depth:=true 
 networks:
   ros_bridge:
     external: true
